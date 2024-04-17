@@ -1,79 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page With Light/Dark Mode</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <div class="big-wrapper light">
-        <img src="./img/shape.png" alt="" class="shape" />
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task List 2024</title>
 
-        <header>
-          <div class="container">
-            <div class="logo">
-              <img src="./img/logo.png" alt="Logo" />
-              <h3>SNEAKIFY</h3>
-            </div>
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	
+	<header>
+		<h1>Task List 2024</h1>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What do you have planned?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Tasks</h2>
 
-            <div class="links">
-              <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#" class="btn">Sign up</a></li>
-              </ul>
-            </div>
+			<div id="tasks">
 
-            <div class="overlay"></div>
+				<!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
 
-            <div class="hamburger-menu">
-              <div class="bar"></div>
-            </div>
-          </div>
-        </header>
+			</div>
+		</section>
+	</main>
 
-        <div class="showcase-area">
-          <div class="container">
-            <div class="left">
-              <div class="big-title">
-                <h1>Sneakify is here,</h1>
-                <h1>Start Exploring now.</h1>
-              </div>
-              <p class="text">
-                Explore our latest collection of innovative sneakers designed 
-                to elevate your every step. From urban streets to athletic tracks, Sneakify 
-                has you covered with cutting-edge footwear that combines style, comfort, and 
-                performance.
-              </p>
-              <div class="cta">
-                <a href="#" class="btn">Let's shop</a>
-              </div>
-            </div>
-
-            <div class="right">
-              <img src="./img/bg.png" alt="Person Image" class="person" />
-            </div>
-          </div>
-        </div>
-
-        <div class="bottom-area">
-          <div class="container">
-            <button class="toggle-btn">
-              <i class="far fa-moon"></i>
-              <i class="far fa-sun"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- JavaScript Files -->
-
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <script src="./app.js"></script>
-  </body>
+	<script src="main.js"></script>
+</body>
 </html>
